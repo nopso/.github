@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/orgs/nopso/discussions/
+    about: Search Warp's open issues and feature requests.
+  - name: Confidential Issues and Bugs
+    url: "mailto:hello@nopso.io"
+    about: Submit any confidential bugs or issues to the Nopso team
+  - name: Documentation
+    url: https://nopso.io/docs
+    about: Documentation for features, guides, best practices, known issues, troubleshooting, and more!
+  - name: Nopso Homepage
+    url: https://www.nopso.io/
+    about: Nopso website.
