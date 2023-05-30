@@ -82,9 +82,7 @@ body:
       label: References
       description: |
         Is there any other GitHub issues (open or closed) or Pull Requests that should be linked here? For example:
-        ```
-        - #480
-        ```
+          - #480
       placeholder:
       value:
     validations:

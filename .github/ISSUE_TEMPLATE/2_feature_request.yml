@@ -61,9 +61,7 @@ body:
       label: References
       description: |
         Are there any other GitHub issues, whether open or closed, that are related to the problem you've described above or to the suggested solution? If so, please create a list below that mentions each of them. For example:
-        ```
-        - #480
-        ```
+          - #480
       placeholder:
       value:
     validations:
