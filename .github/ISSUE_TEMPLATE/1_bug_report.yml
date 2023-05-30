@@ -7,7 +7,7 @@ body:
     attributes:
       label: Expected Behavior
       description: What should have happened?
-      placeholder: What should have happened?
+      placeholder:
       value:
     validations:
       required: true
@@ -17,7 +17,7 @@ body:
     attributes:
       label: Actual Behavior
       description: What actually happened?
-      placeholder: What actually happened?
+      placeholder:
       value:
     validations:
       required: true
@@ -32,11 +32,7 @@ body:
           2. Click on '...'
           3. Scroll down to '...'
           4. See error '...'
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error '...'
+      placeholder:
       value:
     validations:
       required: true
@@ -47,8 +43,7 @@ body:
       label: Additional Context
       description: |
         Are there anything atypical about your situation that we should know?
-        For example: is Terraform running in a wrapper script or in a CI system? Are you passing any unusual command line options or environment variables to opt-in to non-default behavior?"
-      placeholder: Additional context...
+      placeholder:
       value:
     validations:
       required: false
@@ -57,7 +52,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: Version of the app, tool, or library.
+      description: "Version of the app, tool, or library. For example: 1.0.0"
       placeholder:
       value:
     validations:
@@ -74,21 +69,21 @@ body:
   - type: dropdown
     id: "blocker"
     attributes:
-      label: "Does this block you from using it daily?"
+      label: "Does this bug block you from using the app, tool, or library daily?"
       description: "All feedback will be reviewed, even if you select 'No'."
       multiple: false
       options:
         - "No"
-        - "Yes, this issue prevents me from using it daily."
+        - "Yes"
 
   - type: textarea
     id: references
     attributes:
       label: References
       description: |
-        Are there any other GitHub issues (open or closed) or Pull Requests that should be linked here? For example:
+        Is there any other GitHub issues (open or closed) or Pull Requests that should be linked here? For example:
         ```
-          - #500
+        - #480
         ```
       placeholder:
       value:

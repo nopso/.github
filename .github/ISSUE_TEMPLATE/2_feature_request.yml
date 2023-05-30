@@ -26,7 +26,7 @@ body:
       placeholder:
       value:
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: proposal
@@ -34,7 +34,7 @@ body:
       label: Proposal
       description: |
           If you have an idea for a way to address the problem via a change to features, please describe it below.
-          In this section, it's helpful to include specific examples of how what you are suggesting might look in the app, library, or on the command line, since that allows us to understand the full picture of what you are proposing.
+          In this section, it's helpful to include specific examples of how what you are suggesting might look in the app, library, or command-line, since that allows us to understand the full picture of what you are proposing.
           If you're not sure of some details, don't worry! When we evaluate the feature request, we may suggest modifications as necessary to work within the design constraints of the project.
       placeholder:
       value:
@@ -62,7 +62,7 @@ body:
       description: |
         Are there any other GitHub issues, whether open or closed, that are related to the problem you've described above or to the suggested solution? If so, please create a list below that mentions each of them. For example:
         ```
-          - #500
+        - #480
         ```
       placeholder:
       value:
