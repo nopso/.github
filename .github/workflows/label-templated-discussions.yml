@@ -45,7 +45,7 @@ jobs:
 
               const fragment = JSDOM.fragment(DISCUSSION_BODY_HTML);
               const selectProductHeader = fragment.querySelector("h3");
-              const templated = selectProductHeader.textContent === 'Select Product';
+              const templated = selectProductHeader.textContent === 'Product';
               if (!templated) {
                 return "";
               }

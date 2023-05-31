@@ -2,7 +2,7 @@ labels: [question]
 body:
 - type: dropdown
   attributes:
-    label: Select Product
+    label: Product
     description: Which Nopso product would you like to ask a question about?
     options:
       - "kubeec"

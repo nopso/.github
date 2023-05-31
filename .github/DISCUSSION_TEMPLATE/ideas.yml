@@ -2,7 +2,7 @@ labels: [idea]
 body:
 - type: dropdown
   attributes:
-    label: Select Product
+    label: Product
     description: Which Nopso product would you like to give an idea about?
     options:
       - "kubeec"
