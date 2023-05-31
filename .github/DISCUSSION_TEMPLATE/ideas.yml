@@ -12,7 +12,7 @@ body:
     required: true
 - type: textarea
   attributes:
-    label: Body
+    label: Idea
     description: Start your discussion!
   validations:
     required: true
