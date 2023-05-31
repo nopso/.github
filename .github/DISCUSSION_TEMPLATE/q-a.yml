@@ -1,0 +1,18 @@
+labels: [question]
+body:
+- type: dropdown
+  attributes:
+    label: Select Product
+    description: Which Nopso product would you like to ask a question about?
+    options:
+      - "kubeec - Ultimate Kubernetes Dashboard"
+      - "k8s - Kubernetes API client library for Dart"
+      - "kubeconfig - Kubeconfig utility and parser"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Body
+    description: Start your discussion!
+  validations:
+    required: true
