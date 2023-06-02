@@ -29,14 +29,14 @@ to <hello@nopso.io>.
 
 
 ## I Have a Question
-
+> Note: [Please don't file an issue to ask a question.] You'll get faster results by using the resources below.
 > If you want to ask a question, we assume that you have read the available [Documentation](https://nopso.io/docs).
 
 Before you ask a question, it is best to search for existing [Discussions](https://github.com/orgs/nopso/discussions) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
-- Open an issue.
+- Ask a question on [Discussions](https://github.com/orgs/nopso/discussions).
 - Provide as much context as you can about what you're running into.
 - Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
 
@@ -68,11 +68,11 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 <!-- omit in toc -->
 #### How Do I Submit a Good Bug Report?
 
-> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent with the [Confidential Issues and Bugs form](https://tally.so/r/wQMdO7).
+> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent with the [Confidential Issues and Bugs form](https://www.nopso.io/confidential.htm).
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an issue. (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
+- Open an issue (Choose "Bug Report" type).
 - Explain the behavior you would expect and the actual behavior.
 - Please provide as much context as possible and describe the *reproduction steps* that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
 - Provide the information you collected in the previous section.
@@ -80,9 +80,8 @@ We use GitHub issues to track bugs and errors. If you run into an issue with the
 Once it's filed:
 
 - The project team will label the issue accordingly.
-- A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `waiting-respons`. Bugs with the `waiting-response` tag will not be addressed until they are reproduced.
-- If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags, and the issue will be left to be [implemented by someone](#your-first-code-contribution).
-
+- A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `waiting-response`. Bugs with the `waiting-response` tag will not be addressed until they are reproduced.
+- If the team is able to reproduce the issue, it will be added to the project backlog.
 
 ### Suggesting Enhancements
 
