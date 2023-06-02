@@ -30,13 +30,14 @@ to <hello@nopso.io>.
 
 ## I Have a Question
 > Note: [Please don't file an issue to ask a question.] You'll get faster results by using the resources below.
+
 > If you want to ask a question, we assume that you have read the available [Documentation](https://nopso.io/docs).
 
 Before you ask a question, it is best to search for existing [Discussions](https://github.com/orgs/nopso/discussions) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
-- Ask a question on [Discussions](https://github.com/orgs/nopso/discussions).
+- Ask a question on [Discussions](https://github.com/orgs/nopso/discussions/categories/q-a).
 - Provide as much context as you can about what you're running into.
 - Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
 
@@ -72,7 +73,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an issue (Choose "Bug Report" type).
+- Open an issue (Choose "Bug Report" kind).
 - Explain the behavior you would expect and the actual behavior.
 - Please provide as much context as possible and describe the *reproduction steps* that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
 - Provide the information you collected in the previous section.
