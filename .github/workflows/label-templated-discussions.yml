@@ -32,8 +32,8 @@ jobs:
 
       - run: npm install jsdom
 
-      - name: Get selected product
-        id: get_selected_product
+      - name: Get selected project
+        id: get_selected_project
         uses: actions/github-script@v6
         with:
           result-encoding: string
@@ -44,38 +44,38 @@ jobs:
               const { DISCUSSION_BODY_HTML } = process.env
 
               const fragment = JSDOM.fragment(DISCUSSION_BODY_HTML);
-              const selectProductHeader = fragment.querySelector("h3");
-              const templated = selectProductHeader.textContent === 'Product';
+              const selectProjectHeader = fragment.querySelector("h3");
+              const templated = selectProjectHeader.textContent === 'Project';
               if (!templated) {
                 return "";
               }
 
-              const selectedProductElement = selectProductHeader.nextElementSibling;
-              if (!selectedProductElement) {
+              const selectedProjectElement = selectProjectHeader.nextElementSibling;
+              if (!selectedProjectElement) {
                 return "";
               }
 
-              const selectedProduct = selectedProductElement.textContent.trim().toLowerCase();
-              const validProducts = ["kubeec", "k8s", "kubeconfig"];
-              return validProducts.includes(selectedProduct) ? selectedProduct : "";
+              const selectedProject = selectedProjectElement.textContent.trim().toLowerCase();
+              const validProjects = ["kubeec", "k8s", "kubeconfig"];
+              return validProjects.includes(selectedProject) ? selectedProject : "";
 
             } catch (error) {
               return "";
             }
 
-      - name: Fetch label id for selected product
+      - name: Fetch label id for selected project
         id: fetch_label_id
-        if: ${{ steps.get_selected_product.outputs.result != '' }}
+        if: ${{ steps.get_selected_project.outputs.result != '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
-          PRODUCT: ${{ steps.get_selected_product.outputs.result }}
+          PRODUCT: ${{ steps.get_selected_project.outputs.result }}
         run: |
-          gh api graphql -F owner=$OWNER -F name=$REPO -F product="$PRODUCT" -f query='
-            query($owner: String!, $name: String!, $product: String) {
+          gh api graphql -F owner=$OWNER -F name=$REPO -F project="$PRODUCT" -f query='
+            query($owner: String!, $name: String!, $project: String) {
               repository(owner: $owner, name: $name){
-                labels(first: 1, query: $product) {
+                labels(first: 1, query: $project) {
                   edges {
                     node {
                       id
@@ -89,7 +89,7 @@ jobs:
           echo 'LABEL_ID='$(jq '.data.repository.labels.edges[].node | .id ' repository_label_data.json) >> $GITHUB_ENV
 
       - name: Label the discussion
-        if: ${{ steps.get_selected_product.outputs.result != '' }}
+        if: ${{ steps.get_selected_project.outputs.result != '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
